@@ -8,8 +8,7 @@ def path_generator(path):
     # print('current path: ' + path)
     for folder in os.listdir(path):
         abs_path = os.path.join(path, folder)
-        generated_path = abs_path.replace('\\', '/')
-        print('generated path: ' + generated_path)
+        print('generated path: ' + abs_path.replace('\\', '/'))
         if os.path.isdir(abs_path):
             path_generator(abs_path)
     return 'finished'
