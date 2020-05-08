@@ -12,6 +12,6 @@ def izip(*args):
     return result
 
 
-request = ('ABCDEFGHIJKLM', 'abcdefghij')
+request = 'ABCDEFGHIJKLM', 'abcdefghij'
 for i in izip(request):
     print(i)
